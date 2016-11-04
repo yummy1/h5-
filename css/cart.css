@@ -25,7 +25,7 @@ body{
     display: block;
     width: 18px;
     height: 18px;
-    background: url("images/safe_icon.png") no-repeat;
+    background: url("../images/safe_icon.png") no-repeat;
     background-size:18px 18px;
     position: absolute;
     left: 20px;
@@ -36,7 +36,7 @@ body{
     height: 20px;
     width: 20px;
     display: block;
-    background: url("images/shop-icon.png") no-repeat;
+    background: url("../images/shop-icon.png") no-repeat;
     background-size: 50px 100px;
     background-position: 0 0;
 }
@@ -175,14 +175,14 @@ body{
 .jd_shop .jd_shop_con .con_product .con_product_box .option .delete_box .delete_box_top{
     width: 20px;
     height: 5px;
-    background: url("images/delete_up.png") no-repeat;
+    background: url("../images/delete_up.png") no-repeat;
     background-size: 20px 5px;
     margin-left: -1px;
 }
 .jd_shop .jd_shop_con .con_product .con_product_box .option .delete_box .delete_box_bot{
     width: 18px;
     height: 18px;
-    background: url("images/delete_down.png") no-repeat;
+    background: url("../images/delete_down.png") no-repeat;
     background-size: 18px 18px;
     margin-top: -3px;
 }
