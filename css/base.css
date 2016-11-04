@@ -104,7 +104,7 @@ input,textarea{
 /*}*/
 /*搜索放大镜*/
 .xy_topBar form .icon_search{
-    background: url("images/search.png") no-repeat;
+    background: url("../images/search.png") no-repeat;
     background-size: 20px 20px;
     display: block;
     width: 20px;
