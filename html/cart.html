@@ -6,16 +6,8 @@
     <title>购物车</title>
     <link rel="stylesheet" href="../css/base.css" type="text/css"/>
     <link rel="stylesheet" href="../css/cart.css" type="text/css"/>
-    <!--<script src="cart.js" type="text/javascript"></script>-->
-    <script>
-        function show() {
-            document.getElementById("jd_tan").style.display="block";
-            console.log("展示");
-        }
-        function show() {
-            document.getElementById("sure").style.display="none";
-        }
-    </script>
+    <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/cart.js" type="application/javascript"></script>
 </head>
 <body>
 <!--导航-->
@@ -67,7 +59,7 @@
                             <span class="change_box_right">+</span>
                         </div>
                         <!--删除按钮-->
-                        <div class="delete_box" onclick="show()">
+                        <div class="delete_box">
                             <div class="delete_box_top"></div>
                             <div class="delete_box_bot"></div>
                         </div>
@@ -102,7 +94,7 @@
                             <span class="change_box_right">+</span>
                         </div>
                         <!--删除按钮-->
-                        <div class="delete_box" onclick="show()">
+                        <div class="delete_box">
                             <div class="delete_box_top"></div>
                             <div class="delete_box_bot"></div>
                         </div>
@@ -149,7 +141,7 @@
                         <span class="change_box_right">+</span>
                     </div>
                     <!--删除按钮-->
-                    <div class="delete_box" onclick="show()">
+                    <div class="delete_box">
                         <div class="delete_box_top"></div>
                         <div class="delete_box_bot"></div>
                     </div>
@@ -196,7 +188,7 @@
                         <span class="change_box_right">+</span>
                     </div>
                     <!--删除按钮-->
-                    <div class="delete_box" onclick="show()">
+                    <div class="delete_box">
                         <div class="delete_box_top"></div>
                         <div class="delete_box_bot"></div>
                     </div>
@@ -231,47 +223,83 @@
                         <span class="change_box_right">+</span>
                     </div>
                     <!--删除按钮-->
-                    <div class="delete_box" onclick="show()">
+                    <div class="delete_box">
                         <div class="delete_box_top"></div>
                         <div class="delete_box_bot"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--商品区块-->
-        <div class="jd_shop_con">
-            <!--复选框-->
-            <div class="con_check">
-                <div class="jd_check_box"></div>
-            </div>
-            <!--商品信息-->
-            <div class="con_product">
-                <!--图片信息-->
-                <a href="#" class="con_product_img"><img src="../images/detail01.jpg" alt=""/></a>
-                <!--商品详细信息-->
-                <div class="con_product_box">
-                    <!--标题-->
-                    <a href="#" class="name">
-                        华为（HUAWEI）荣耀平板优享版 Wifi 8英寸平板电脑（高通骁龙 64位四核1280×800 2G/16G 4800mAh）香槟金
-                    </a>
-                    <!--价格-->
-                    <p class="price">&yen;1000.00</p>
-                    <!--操作-->
-                    <div class="option">
-                        <!--选择数量-->
-                        <div class="change_box">
-                            <span class="change_box_left">-</span>
-                            <input type="tel"/>
-                            <span class="change_box_right">+</span>
-                        </div>
-                        <!--删除按钮-->
-                        <div class="delete_box" onclick="show()">
-                            <div class="delete_box_top"></div>
-                            <div class="delete_box_bot"></div>
-                        </div>
+    </div>
+    <!--商品区块-->
+    <div class="jd_shop_con">
+        <!--复选框-->
+        <div class="con_check">
+            <div class="jd_check_box"></div>
+        </div>
+        <!--商品信息-->
+        <div class="con_product">
+            <!--图片信息-->
+            <a href="#" class="con_product_img"><img src="../images/detail01.jpg" alt=""/></a>
+            <!--商品详细信息-->
+            <div class="con_product_box">
+                <!--标题-->
+                <a href="#" class="name">
+                    华为（HUAWEI）荣耀平板优享版 Wifi 8英寸平板电脑（高通骁龙 64位四核1280×800 2G/16G 4800mAh）香槟金
+                </a>
+                <!--价格-->
+                <p class="price">&yen;1000.00</p>
+                <!--操作-->
+                <div class="option">
+                    <!--选择数量-->
+                    <div class="change_box">
+                        <span class="change_box_left">-</span>
+                        <input type="tel"/>
+                        <span class="change_box_right">+</span>
+                    </div>
+                    <!--删除按钮-->
+                    <div class="delete_box">
+                        <div class="delete_box_top"></div>
+                        <div class="delete_box_bot"></div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!--商品区块-->
+    <div class="jd_shop_con">
+        <!--复选框-->
+        <div class="con_check">
+            <div class="jd_check_box"></div>
+        </div>
+        <!--商品信息-->
+        <div class="con_product">
+            <!--图片信息-->
+            <a href="#" class="con_product_img"><img src="../images/detail01.jpg" alt=""/></a>
+            <!--商品详细信息-->
+            <div class="con_product_box">
+                <!--标题-->
+                <a href="#" class="name">
+                    华为（HUAWEI）荣耀平板优享版 Wifi 8英寸平板电脑（高通骁龙 64位四核1280×800 2G/16G 4800mAh）香槟金
+                </a>
+                <!--价格-->
+                <p class="price">&yen;1000.00</p>
+                <!--操作-->
+                <div class="option">
+                    <!--选择数量-->
+                    <div class="change_box">
+                        <span class="change_box_left">-</span>
+                        <input type="tel"/>
+                        <span class="change_box_right">+</span>
+                    </div>
+                    <!--删除按钮-->
+                    <div class="delete_box">
+                        <div class="delete_box_top"></div>
+                        <div class="delete_box_bot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--订单金额操作-->
     <div class="jd_amount">
@@ -287,18 +315,18 @@
                 总额:&yen;0.00  返现:&yen;0.00
             </p>
         </div>
-        <a href="" class="amount_submit">
+        <a href="home.html" class="amount_submit">
             去结算(<span>0</span>)
         </a>
     </div>
     <!--弹出框-->
-    <div class="jd_win" id="jd_tan">
+    <div class="jd_win" id="tan">
         <div class="jd_win_box">
             <div class="jd_win_box_text">
                 您确认删除这件商品吗?
             </div>
             <div class="jd_btn_box clearfix">
-                <a href="" class="cancel">取消</a>
+                <a href="" class="cancel" id="cancel">取消</a>
                 <a href="" class="submit" id="sure">确定</a>
             </div>
         </div>
